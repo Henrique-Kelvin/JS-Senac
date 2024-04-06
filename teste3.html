@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <script>
+        num = parseFloat(window.prompt("Digite um numero: "))
+        preco = parseFloat(window.prompt("Digite o preço: "))
+        if ( num <= 10) {
+            perc = 5
+        } else {
+            if (num <= 20) {
+                perc = 7
+            } else {
+                perc = 9
+            }
+        }
+        preco = preco * (1 + perc / 100)
+        window.alert("O preço final é de R$: " + preco)
+    </script>
+</head>
+<body>
+    
+</body>
+</html>

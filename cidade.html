@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Cidade</title>
+    <script>
+        preco = parseFloat(window.prompt("Qual o preco do produto? ")) 
+        estado = window.prompt("Qual a sigla do estado onde será vendido? ")
+        switch (estado) {
+            case "SP": imposto = preco * 0.25; break
+            case "RJ": imposto = preco * 0.22; break
+            case "MG": imposto = preco * 0.2; break
+            default: imposto = preco * 0.18;
+        }
+
+        window.alert("O valor do imposto é R$ " + imposto)
+    </script>
+</head>
+<body>
+    
+</body>
+</html>
